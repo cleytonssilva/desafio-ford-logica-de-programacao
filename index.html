@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desafio Ford Enter</title>
+</head>
+
+
+
+<body>
+    <div class="telaInicial">
+        <h1></h1>
+        <h2></h2>
+        <div class="consumo_medio" id="consumo_medio">
+        <button type="button" id="consumo_medio" onclick="mostrarCadastro()">Iniciar </button>
+        </div>
+        <div class="mostrarCadastro">
+            <h2></h2>
+        </div>
+        <div class="container" id="container">
+            <div class="cadastroForm" id="cadastroForm" >
+                <label for="distancia">Qual sua distância percorrida (km)? <br><br></label>
+                <input type="number" id="distancia" name="distancia" required > <br><br>
+                <label for="combustivel">Qual o consumo médio do seu veículo (em km/l)?<br><br> </label>
+                <input type="number" id="combustivel" name="combustivel" required><br><br><br>
+                <button type="button" id="calcularConsumo" onclick="cadastro()">Calcular</button>
+            </div>
+
+            <div class="cadastroPostos" id="cadastroPostos">
+                <label for="postos" id="qtdPostos1">Em quantos postos você pesquisou? <br><br></label>
+                <input type="number" id="qtdPostos" name="qtdPostos" required > <br><br>
+                <button type="button" id="continuar" onclick="listaPostos()">Continuar</button>
+                <div class="cadastroPreco" id="cadastroPreco">
+                    
+                </div>
+            </div>
+            <div class="resultados" id="resultados">
+                <h3>Resultados:</h3>
+                <p id="resultadoConsumo"></p>
+                <p id="resultado"></p>
+                <p id="gastoDiario"></p>
+                <p id="menorPreco"></p>
+                <button type="button" id="voltarTelaInicio" onclick="document.location='index.html'">Início</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
